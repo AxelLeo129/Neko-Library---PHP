@@ -1,0 +1,104 @@
+/* Global */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul,
+ol {
+    padding: 0px;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+    list-style: none;
+    text-decoration: none;
+}
+
+.superior--bar {
+    background: black;
+}
+
+.superior--bar a {
+    color: white;
+}
+
+.back--color,
+back--color a {
+    background: #47bac1;
+    color: white;
+}
+
+/* Redes sociales */
+.social--network {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Facebook */
+
+.white--facebook {
+    color: white;
+}
+
+.black--facebook {
+    color: black;
+}
+
+.color--facebook {
+    color: white;
+    background: #46639f;
+}
+
+/* Youtube */
+
+.color--youtube {
+    color: white;
+    background: #d6513e;
+}
+
+.white--youtube {
+    color: white;
+}
+
+.black--youtube {
+    color: black;
+}
+
+/* Twitter */
+
+.color--twitter {
+    color: white;
+    background: #0ab2e6;
+}
+
+.white--twitter {
+    color: white;
+}
+
+.black--twitter {
+    color: black;
+}
+
+/* Instagram */
+
+.color--instagram {
+    color: white;
+    background: linear-gradient(45deg, #fca925, #ee1d5f, #6350a2);
+}
+
+.white--instagram {
+    color: white;
+}
+
+.black-instagram {
+    color: black;
+}

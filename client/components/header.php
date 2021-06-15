@@ -1,6 +1,6 @@
 <!--- TOP -->
 
-<div class="container-fluid superior--bar" id="top">
+<div class="container-fluid superior--bar" id="cima">
     <div class="container">
         <div class="row">
             <!-- Redes sociales -->
@@ -18,12 +18,12 @@
                     </li>
                     <li>
                         <a href="https://instagram.com" target="_blank">
-                            <i class="fa fa-instragram social--network white--instragram" aria-hidden="true"></i>
+                            <i class="fa fa-instagram social--network white--instragram" aria-hidden="true"></i>
                         </a> 
                     </li>
                     <li>
-                        <a href="https://tweeter.com" target="_blank">
-                            <i class="fa fa-tweeter social--network white--tweeter" aria-hidden="true"></i>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter social--network white--twitter" aria-hidden="true"></i>
                         </a> 
                     </li>
                 </ul>
@@ -42,3 +42,101 @@
         </div>
     </div>
 </div>
+
+<!--- HEADER -->
+<header class="container-fluid">
+    <div class="container">
+        <div class="row" id="cabezote">
+            <!--- Logo -->
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo">
+                <a href="#">
+                    <img src="http://neko-library---php.test/admin/views/img/template/logo.png" class="img-responsive">
+                </a>
+            </div>
+            <!--- Categorías y buscador -->
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                <!--- Botón categorías -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 back--color" id="btn_categorias">
+                    <p>CATEGORÍAS 
+                        <span class="pull-right"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </p>
+                </div>
+                <!--- Buscador -->
+                <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-12" id="buscador"> 
+                    <input type="search" name="buscar" class="form-control" placeholder="Buscar...">
+                    <span class="input-group-btn">
+                        <a href="#">
+                            <button class="btn btn-default back--color" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!--- Carrito de compras -->
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="carrito">
+                <a href="#">
+                    <button class="btn btn-default pull-left back--color">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                </a>
+                <p>TU CESTA <span class="quantity-cart"></span> <br> USD $ <span class="sum-cart"></span></p>
+            </div>
+        </div>
+        <!--- Categorías -->
+        <div class="col-sx-12 back--color" id="categorias">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <h4>
+                    <a href="#" class="pixel--categories">Lorem ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <h4>
+                    <a href="#" class="pixel--categories">Lorem ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <h4>
+                    <a href="#" class="pixel--categories">Lorem ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <h4>
+                    <a href="#" class="pixel--categories">Lorem ipsum</a>
+                </h4>
+                <hr>
+                <ul>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
