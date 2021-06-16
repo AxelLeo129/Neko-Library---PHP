@@ -102,3 +102,30 @@ back--color a {
 .black-instagram {
     color: black;
 }
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+     .col-lg-0 {
+        display: none;
+    }
+}
+
+/* Escritorio mediano o tablet horizontal */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .col-md-0 {
+        display: none;
+    }
+}
+
+/* Escritorio pequeño o tablet vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    .col-sm-0 {
+        display: none;
+    }
+}
+/* Movil */
+@media (max-width: 767px) {
+    .col-xs-0 {
+        display: none;
+    }
+}

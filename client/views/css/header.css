@@ -21,12 +21,6 @@
 }
 
 /* Header */
-header #logo img {
-    padding: 20px 60px;
-    padding-left: 0px;
-}
-
-
 header #btn_categorias {
     margin: 20px 0;
 }
@@ -73,7 +67,7 @@ header #carrito p {
 }
 
 header #categorias {
-    display: block;
+    display: none;
     margin-top: -10px;
     position: relative;
 }
@@ -85,4 +79,77 @@ header #categorias h4 {
 
 header #categorias hr {
     border: 1px solid rgba(255, 255, 255, .3);
+}
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+    /* Header */
+    header #logo img {
+        padding: 20px 60px;
+        padding-left: 0px;
+    }
+    
+    header #carrito {
+        padding-left: 100px;
+    }
+}
+
+/* Escritorio mediano o tablet horizontal */
+@media (max-width: 1199px) and (min-width: 992px) {
+    /* Header */
+    header #logo img {
+        padding: 25px 60px;
+        padding-left: 0px;
+    }
+
+    header #carrito {
+        padding-left: 70px;
+    }
+    
+}
+
+/* Escritorio pequeño o tablet vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    /* Header */
+    header #logo img {
+        padding: 30px 0px;
+    }
+
+    header #carrito {
+        padding-left: 55px;
+    }
+
+    header #carrito p {
+        display: none;
+    }
+
+}
+/* Movil */
+@media (max-width: 767px) {
+    /* Top */
+    #cima ul {
+        text-align: center;
+    }
+
+    #cima #register {
+        border-top: 1px solid #222;
+    } 
+
+    /* Header */
+    header #logo img {
+        padding: 30px;
+        padding-bottom: 10px;
+    }
+
+    header #categorias {
+        margin-bottom: 10px;
+    }
+
+    header #buscador {
+        margin-bottom: 10px;
+    }
+
+    header #carrito {
+        margin: 0px;
+    }
 }
