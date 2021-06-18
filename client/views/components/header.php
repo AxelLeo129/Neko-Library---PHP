@@ -6,26 +6,21 @@
             <!-- Redes sociales -->
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
                 <ul>
-                    <li>
-                        <a href="https://facebook.com" target="_blank">
-                            <i class="fa fa-facebook social--network white--facebook" aria-hidden="true"></i>
-                        </a> 
-                    </li>
-                    <li>
-                        <a href="https://youtube.com" target="_blank">
-                            <i class="fa fa-youtube social--network white--youtube" aria-hidden="true"></i>
-                        </a> 
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank">
-                            <i class="fa fa-instagram social--network white--instragram" aria-hidden="true"></i>
-                        </a> 
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank">
-                            <i class="fa fa-twitter social--network white--twitter" aria-hidden="true"></i>
-                        </a> 
-                    </li>
+
+                    <?php 
+                    
+                        $social = ControladorPlantilla::ctrTemplateStyle();
+                        $json_redes_sociales = json_decode($social["redes_sociales"], true);
+                        foreach ($json_redes_sociales as $key => $value) {
+                            echo '<li>
+                                    <a href="'. $value["url"] .'" target="_blank">
+                                        <i class="fa '. $value["red"] . ' social--network ' . $value["estilo"] . '" aria-hidden="true"></i>
+                                    </a> 
+                                </li>';
+                        }
+
+                    ?>
+
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 register">
