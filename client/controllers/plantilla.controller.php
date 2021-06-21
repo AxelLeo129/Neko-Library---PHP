@@ -5,7 +5,7 @@ class ControladorPlantilla {
 
     /* Planitlla */
     public function plantilla() {
-        include "views/template.php";
+        include "views/plantilla.php";
     }
 
     /* Estilos dinámicos */

@@ -45,7 +45,7 @@
             <!--- Logo -->
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logo">
                 <a href="#">
-                    <img src="http://neko-library---php.test/admin/views/img/template/logo.png" class="img-responsive">
+                    <img src="http://neko-library---php.test/admin/<?php echo $social["logo"]; ?>" class="img-responsive">
                 </a>
             </div>
             <!--- Categorías y buscador -->
