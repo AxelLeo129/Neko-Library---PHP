@@ -35,6 +35,9 @@
     /* Header */    
     include "components/encabezado.php";
 
+    if(isset($_GET["ruta"])) {
+        echo $_GET["ruta"];
+    }
 
 ?>
 

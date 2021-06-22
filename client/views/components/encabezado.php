@@ -80,58 +80,33 @@
         </div>
         <!--- Categorías -->
         <div class="col-sx-12 back--color" id="categorias">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4>
-                    <a href="#" class="pixel--categories">Lorem ipsum</a>
-                </h4>
-                <hr>
-                <ul>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4>
-                    <a href="#" class="pixel--categories">Lorem ipsum</a>
-                </h4>
-                <hr>
-                <ul>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4>
-                    <a href="#" class="pixel--categories">Lorem ipsum</a>
-                </h4>
-                <hr>
-                <ul>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                <h4>
-                    <a href="#" class="pixel--categories">Lorem ipsum</a>
-                </h4>
-                <hr>
-                <ul>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                    <li><a href="#" class="pixel-subcategories">Lorem ipsum</a></li>
-                </ul>
-            </div>
+
+            <?php 
+            
+                $controlador_producto = new ControladorProducto();
+                $categorias = $controlador_producto->ctrShowCategories();
+                
+                foreach ($categorias as $key => $value) {
+                    echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <h4>
+                                <a href="' . $value['ruta'] . '" class="pixel--categories">'. $value['nombre'] . '</a>
+                            </h4>
+                            <hr>
+                            <ul>';
+
+                            $subcategorias = ControladorProducto::ctrShowSubcategories($value["id"]);
+                            
+                            foreach ($subcategorias as $key => $value) {
+                                echo '<li><a href="' . $value['ruta'] . '" class="pixel--subcategories">'. $value['nombre'] .'</a></li>';
+                            }
+
+                            echo '</ul>
+                        </div>';
+                }
+            
+
+            ?>
+
         </div>
     </div>
 </header>
