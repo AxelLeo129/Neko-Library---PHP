@@ -3,9 +3,9 @@
 class ControladorProducto {
 
     /* Get Categorias */
-    public function ctrShowCategories() {
+    public function ctrShowCategories($item, $valor) {
         $tabla = "categorias";
-        $respuesta = ModeloProducto::mdlShowCategories($tabla);
+        $respuesta = ModeloProducto::mdlShowCategories($tabla, $item, $valor);
         return $respuesta;
     }
 

@@ -84,7 +84,7 @@
             <?php 
             
                 $controlador_producto = new ControladorProducto();
-                $categorias = $controlador_producto->ctrShowCategories();
+                $categorias = $controlador_producto->ctrShowCategories(null, null);
                 
                 foreach ($categorias as $key => $value) {
                     echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
