@@ -10,9 +10,9 @@ class ControladorProducto {
     }
 
     /* Get Subcategorias */
-    static public function ctrShowSubcategories($id) {
+    static public function ctrShowSubcategories($item, $valor) {
         $tabla = "subcategorias";
-        $respuesta = ModeloProducto::mdlShowSubcategories($tabla, $id);
+        $respuesta = ModeloProducto::mdlShowSubcategories($tabla, $item, $valor);
         return $respuesta;
     }
 

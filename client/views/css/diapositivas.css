@@ -1,0 +1,105 @@
+/*=============================================
+SLIDE
+=============================================*/
+
+#diapositiva {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#diapositiva ul {
+    position: relative;
+    left: 0%;
+    margin: auto;
+    height: auto;
+    width: 400%;
+    clear: both;
+    display: table;
+}
+
+#diapositiva ul li {
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+#diapositiva ul li img {
+    width: 100%;
+}
+
+#diapositiva .slide--opcion-1 img {
+    position: absolute;
+    opacity: 1;
+    /*top:15%;
+	right:10%;
+	width:45%;*/
+}
+
+#diapositiva .slide--opcion-1 .slide--text {
+    position: absolute;
+    /*width:40%;
+	top:20%;
+	left:10%;*/
+}
+
+
+#diapositiva .slideOpcion2 img {
+    position: absolute;
+    opacity: 1;
+    /*top:5%;
+	left:15%;
+	width:25%;*/
+}
+
+#diapositiva .slideOpcion2 .slide--text {
+    position: absolute;
+    text-align: right;
+    /*width:40%;
+	top:15%;
+	right:15%;*/
+}
+
+#diapositiva .options--slide h1 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    /*color:#333;*/
+}
+
+#diapositiva .options--slide h2 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    /*color:#777;*/
+}
+
+#diapositiva .options--slide h3 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    opacity: 1;
+    top: -10%;
+    /*color:#888;*/
+}
+
+#diapositiva .options--slide button {
+    border: 0px;
+    margin-top: 10px;
+
+    opacity: 1;
+    top: -10%;
+}
+
+#diapositiva .options--slide button:hover {
+    background: black;
+    color: white;
+    border: 0px;
+}
+
+#diapositiva .options--slide button span {
+    margin-left: 10px;
+}

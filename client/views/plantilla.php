@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed">
     <link rel="stylesheet" href="<?php echo $enlace ?>views/css/plantilla.css">
     <link rel="stylesheet" href="<?php echo $enlace ?>views/css/encabezado.css">
+    <link rel="stylesheet" href="<?php echo $enlace ?>views/css/diapositivas.css">
 
     <script src="<?php echo $enlace ?>views/js/plugins/jquery.min.js"></script>
     <script src="<?php echo $enlace ?>views/js/plugins/bootstrap.min.js"></script>
@@ -39,6 +40,7 @@
     /* Header */    
     include "components/encabezado.php";
 
+    /* Contenido dinámico */
     $rutas = array();
     $ruta = "";
 
@@ -48,6 +50,7 @@
         $item = "ruta";
         $valor = $_GET["ruta"];
 
+        /* URL's amigables de categorías */
         $controlador_producto = new ControladorProducto();
         $ruta_categorias = $controlador_producto->ctrShowCategories($item, $valor);
 
@@ -55,11 +58,23 @@
             $ruta = $rutas[0];
         }
 
+        /* URL's amigables de subcategorías */
+        $ruta_subcategorias = $controlador_producto->ctrShowSubcategories($item, $valor);
+
+        foreach ($ruta_subcategorias as $key => $value) {
+            if($rutas[0] == $value["ruta"]) {
+                $ruta = $rutas[0];
+            }
+        }
+
+        /* Lista blanca */
         if($ruta != null) {
             include "components/productos.php";
         } else {
             include "components/error404.php";
         }
+    } else {
+        include "components/diapositivas.php";
     }
 
 ?>

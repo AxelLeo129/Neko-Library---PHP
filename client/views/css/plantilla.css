@@ -30,7 +30,7 @@ a:active {
 }
 
 .back--color,
-back--color a {
+.back--color a {
     background: #47bac1;
     color: white;
 }
@@ -103,10 +103,20 @@ back--color a {
     color: black;
 }
 
+/* Error 404 */
+.error-404 {
+    color: #333;
+}
+
 /* Escritorio grande */
 @media (min-width: 1200px) {
-     .col-lg-0 {
+    .col-lg-0 {
         display: none;
+    }
+
+    .error-404 h1 {
+        font-size: 300px;
+        text-shadow: 8px 8px 1px #dadada;
     }
 }
 
@@ -115,6 +125,11 @@ back--color a {
     .col-md-0 {
         display: none;
     }
+
+    .error-404 h1 {
+        font-size: 200px;
+        text-shadow: 6px 6px 1px #dadada;
+    }
 }
 
 /* Escritorio pequeño o tablet vertical */
@@ -122,10 +137,21 @@ back--color a {
     .col-sm-0 {
         display: none;
     }
+
+    .error-404 h1 {
+        font-size: 150px;
+        text-shadow: 4px 4px 1px #dadada;
+    }
 }
+
 /* Movil */
 @media (max-width: 767px) {
     .col-xs-0 {
         display: none;
+    }
+
+    .error-404 h1 {
+        font-size: 75px;
+        text-shadow: 2px 2px 1px #dadada;
     }
 }

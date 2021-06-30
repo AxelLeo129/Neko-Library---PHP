@@ -24,10 +24,10 @@ class ModeloProducto {
     }
 
     /* Get Subcategorias */
-    static public function mdlShowSubcategories($tabla, $id) {
+    static public function mdlShowSubcategories($tabla, $item, $valor) {
         $pdo = new Conexion();
-        $stmt = $pdo->prepare("SELECT * FROM $tabla WHERE categoria_id = :categoria_id");
-        $stmt->bindParam(":categoria_id", $id, PDO::PARAM_INT);
+        $stmt = $pdo->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+        $stmt->bindParam(":" . $item, $valor, PDO::PARAM_INT);
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();
